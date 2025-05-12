@@ -1,9 +1,9 @@
 <main class="calculator">
-  <app-route-button [reversed]="true" routeTo="/" label="Go home" />
+  <app-button [reversed]="true" routeTo="/" label="Go home" />
 
   <section class="calculator__panel">
     <div class="calculator__history" *ngIf="historyLog.length > 0">
-      <app-route-button
+      <app-button
         (click)="toggleHistoryModal()"
         label="📜"
         title="History log"

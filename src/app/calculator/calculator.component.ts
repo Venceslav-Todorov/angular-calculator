@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { CalculateService } from '../services/calculate.service';
 import { InputComponent } from '../components/input/input.component';
 import { NgFor, NgIf } from '@angular/common';
-import { RouteButtonComponent } from "../components/route-button/route-button.component";
+import { ButtonComponent } from "../components/button/button.component";
 import { ModalComponent } from '../components/modal/modal.component';
 
 @Component({
   selector: 'app-calculator',
-  imports: [InputComponent, NgFor, NgIf, RouteButtonComponent, ModalComponent],
+  imports: [InputComponent, NgFor, NgIf, ButtonComponent, ModalComponent],
   templateUrl: './calculator.component.html',
   styleUrls: ['./calculator.component.scss']
 })

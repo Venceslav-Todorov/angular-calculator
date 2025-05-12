@@ -3,12 +3,12 @@ import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-route-button',
+  selector: 'app-button',
   imports: [RouterLink, NgIf, NgClass],
-  templateUrl: './route-button.component.html',
-  styleUrl: './route-button.component.scss'
+  templateUrl: './button.component.html',
+  styleUrl: './button.component.scss'
 })
-export class RouteButtonComponent {
+export class ButtonComponent {
   @Input() routeTo: string = '';
   @Input() label: string = '';
   @Input() reversed: boolean = false

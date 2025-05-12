@@ -1,7 +1,6 @@
 a,
 button {
   background: var(--color-green);
-  // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   border-radius: var(--border-radius);
   border: none;
   cursor: pointer;
@@ -45,6 +44,10 @@ button {
       transform: scaleX(1);
     }
   }
+}
+
+a {
+  box-shadow: var(--box-shadow);
 }
 
 button {

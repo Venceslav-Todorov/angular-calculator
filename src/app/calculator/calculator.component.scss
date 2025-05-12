@@ -8,7 +8,7 @@
 
   .calculator__panel {
     border-radius: var(--border-radius);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: var(--box-shadow);
     background: var(--color-white);
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@
         transition: var(--transition);
 
         &:hover {
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: var(--box-shadow);
           transform: translateY(-1px);
           opacity: 0.7;
         }

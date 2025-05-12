@@ -1,9 +1,9 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { RouteButtonComponent } from "../route-button/route-button.component";
+import { ButtonComponent } from "../button/button.component";
 
 @Component({
   selector: 'app-modal',
-  imports: [RouteButtonComponent],
+  imports: [ButtonComponent],
   templateUrl: './modal.component.html',
   styleUrl: './modal.component.scss'
 })
