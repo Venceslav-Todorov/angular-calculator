@@ -1,0 +1,7 @@
+<a *ngIf="routeTo" [routerLink]="routeTo" [ngClass]="{ reversed }">
+  {{ label }}
+</a>
+
+<button *ngIf="!routeTo" [ngClass]="{ reversed }">
+  {{ label }}
+</button>

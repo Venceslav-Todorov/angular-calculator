@@ -1,0 +1,15 @@
+<main class="modal">
+  <div class="modal-content">
+    <header>
+      <h3>{{ title }}</h3>
+    </header>
+
+    <main>
+      <ng-content></ng-content>
+    </main>
+
+    <footer>
+      <app-route-button (click)="closeModal()" label="close" />
+    </footer>
+  </div>
+</main>

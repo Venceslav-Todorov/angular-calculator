@@ -1,0 +1,21 @@
+.app {
+  background: #2c3e24;
+  height: 100dvh;
+  position: relative;
+  z-index: 2;
+
+  &::before {
+    background-image: url("../assets/images/home-background.jpg");
+    background-size: cover;
+    position: absolute;
+    background-position: bottom;
+    content: "";
+    filter: blur(10px);
+    left: 0;
+    opacity: 0.6;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,46 @@
+<main class="calculator">
+  <app-route-button [reversed]="true" routeTo="/" label="Go home" />
+
+  <section class="calculator__panel">
+    <div class="calculator__history" *ngIf="historyLog.length > 0">
+      <app-route-button
+        (click)="toggleHistoryModal()"
+        label="📜"
+        title="History log"
+      />
+
+      <p>
+        {{ historyLog[historyLog.length - 1].input }}
+      </p>
+    </div>
+
+    <app-input
+      [value]="currentInput"
+      (valueChange)="updateInput($event)"
+      (enterPressed)="calculate()"
+    />
+
+    <section class="calculator__keypad">
+      <p
+        *ngFor="let option of options"
+        class="calculator__option"
+        [class.operator]="isOperator(option)"
+        [class.equals]="option === '='"
+        [class.clear]="option === 'AC'"
+        (click)="handleOption(option)"
+      >
+        {{ option }}
+      </p>
+    </section>
+  </section>
+</main>
+
+<app-modal
+  *ngIf="showHistoryModal"
+  [title]="'History'"
+  (close)="toggleHistoryModal()"
+>
+  <ul>
+    <li *ngFor="let log of historyLog">{{ log.input }} = {{ log.result }}</li>
+  </ul>
+</app-modal>

@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --gap: 5px;
+  --border-radius: 4px;
+  --font-family: "Lilita One", sans-serif;
+  --font-size: 1rem;
+  --line-height: 1.5;
+  --transition: all 0.3s;
+
+  /* Colors */
+  --color-yellow: #f8e663;
+  --color-green: #3d722e;
+  --color-blue: #1e3a8a;
+  --color-red: #991b1b;
+  --color-white: #fefefd;
+  --color-light-green: #e2fbd7;
+  --color-light-blue: #dbeafe;
+  --color-light-red: #fecaca;
+  --color-light-yellow: #fdf6cd;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-style: normal;
+  line-height: var(--line-height);
+  background-color: #fff;
+  color: #000;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100dvh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+p {
+  display: block;
+  margin: 0;
+}
+
+a {
+  all: unset;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
