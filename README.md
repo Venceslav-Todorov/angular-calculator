@@ -6,22 +6,27 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 This app has two main pages:
 
-- **Home Page**: A welcome screen with a button to the calculator.
-- **Calculator Page**: A fully functional calculator supporting the following operations:
+- **Home Page**: A welcome screen with a button leading to the calculator.
+- **Calculator Page**: A fully functional calculator with history log (📜) of the past 20 calculations supporting the following operations:
   - Addition (+)
   - Subtraction (-)
   - Multiplication (×)
   - Division (÷)
   - Decimal inputs
+    other:
+  - Only numbers or valid operators are available for use
+  - Edge cases like multiple consecutive operators are not allowed
+  - History has a max of 20 entries
 
-The calculator supports addition, subtraction, multiplication, division, decimal inputs
+> calculations logic is handled in the `CalculateService`, located at:  
+> `src/app/services/calculate.service.ts`
 
 ## Getting Started
 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Venceslav-Todorov/your-repo-name.git
+git clone https://github.com/Venceslav-Todorov/hedgeserv-calculator
 ```
 
 - **Node.js** and **npm** must be installed. You can download Node.js from [here](https://nodejs.org/).
