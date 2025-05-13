@@ -13,7 +13,6 @@ This app has two main pages:
   - Multiplication (×)
   - Division (÷)
   - Decimal inputs
-    other:
   - Only numbers or valid operators are available for use
   - Edge cases like multiple consecutive operators are not allowed
   - History has a max of 20 entries
