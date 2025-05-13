@@ -46,3 +46,5 @@ npm install
 ```bash
 ng serve
 ```
+
+Then open your browser and navigate to: http://localhost:4200/ (or ctrl + click the link)
